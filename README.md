@@ -27,7 +27,7 @@ The common divisors of 24 and 30 are 1, 2, 3, and 6. And 6 is the largest of the
 
 You are given two different algorithms that solve the GCD problem. For each of these algorithms, implement them in JavaScript and observe their behavior as they run.
 
-### Algorithm 1
+### Algorithm 1: Logarithmic aka O(log n) -- (Euclid's solution)
 
 The following algorithm is written in pseudocode. Your task is to implement it in JavaScript.
 
@@ -50,7 +50,7 @@ function gcd1
 
 Write this algorithm in the file named `src/gcd.js`.
 
-### Algorithm 2
+### Algorithm 2: Linear aka O(n) -- (Brute force solution)
 
 The following algorithm is written in pseudocode. Your task is to implement it in JavaScript.
 
