@@ -26,5 +26,16 @@ function splitSum1(tours) {
 /**
  * Write a function named splitSum2 that implements algorithm 2 here
  */
-
+function splitSum2(tours) {
+  let smallest = Number.POSITIVE_INFINITY;
+  for (let k = 0; k < tours.length; k++) {
+    let preSum = tours.slice(0, k + 1).reduce((a, c) => a + c, 0);
+    let postSum = tours.slice(k + 1).reduce((a, c) => a + c, 0);
+    const difference = Math.abs(preSum - postSum);
+    if (difference < smallest) {
+      smallest = difference;
+    }
+  }
+  return smallest;
+}
 module.exports = { splitSum1, splitSum2 };
